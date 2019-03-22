@@ -1,0 +1,15 @@
+com\znv\fss\common\utils\bitstream\BigEndianBitInputStream.class
+com\znv\fss\common\utils\VersionCheckUtil.class
+com\znv\fss\common\utils\FeatureCompressByBs.class
+com\znv\fss\common\errorcode\FssErrorCodeEnum.class
+com\znv\fss\common\VConstants.class
+com\znv\fss\common\utils\bitstream\LittleEndianBitInputStream.class
+com\znv\fss\common\utils\bitstream\BitOutputStream.class
+com\znv\fss\common\utils\GolombRiceUtil.class
+com\znv\fss\common\utils\bitstream\BitStream.class
+com\znv\fss\common\utils\PropertiesUtil.class
+com\znv\fss\common\utils\bitstream\BigEndianBitOutputStream.class
+com\znv\fss\common\utils\bitstream\LittleEndianBitOutputStream.class
+com\znv\fss\common\utils\FeatureCompression.class
+com\znv\fss\common\utils\bitstream\BitInputStream.class
+com\znv\fss\common\utils\FeatureCompUtil.class

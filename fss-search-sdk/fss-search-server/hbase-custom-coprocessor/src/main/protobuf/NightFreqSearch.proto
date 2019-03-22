@@ -1,0 +1,46 @@
+option java_package = "com.znv.hbase.protobuf.generated";
+option java_outer_classname = "NightFreqSearchProtos";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+option optimize_for = SPEED;
+import "Scan.proto";
+
+message NightFreqSearchRequest {
+    required Scan scan = 1;
+    required int32 size = 2; //返回top N 条数据
+    required int32 frequency = 3; //频次阈值
+    required float threshold = 4; //相似度阈值
+    required string startTime = 5;
+    required string endTime = 6;
+    optional string analysis = 7;
+}
+
+message NightFreqSearchOut {
+    required int64 stayTime = 1; //驻留时长
+    required bytes rowKey = 2; //rowkey
+    required bytes feature = 3; //特征值
+    optional string personId = 4;
+    optional string cameraId = 5;//摄像头id
+    optional string cameraName = 6;//摄像头id
+    optional string imgUrl = 7; //img_url
+}
+
+service NightFreqSearchService {
+    rpc getNightFreqSearchResult (NightFreqSearchRequest) returns (NightFreqSearchResponse);
+}
+
+//web新界面
+message NightFreqSearchResponse {
+    repeated NightFreqMap results = 1;
+}
+
+message NightFreqMap {
+    required int32 frequecy = 1; //抓拍频次
+    required bytes rowKey = 2; //rowkey
+    required bytes feature = 3; //特征值
+    required string cameraId = 4; //摄像头id
+    required string personId = 5;
+    required string  imgUrl= 6;
+    repeated NightFreqSearchOut datas = 7;//这个人位于所有摄像头下的信息
+}
+

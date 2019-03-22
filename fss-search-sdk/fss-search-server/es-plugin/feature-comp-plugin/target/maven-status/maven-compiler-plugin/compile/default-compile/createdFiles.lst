@@ -1,0 +1,3 @@
+com\znv\fss\elasticsearch\plugin\FeatureCompScriptPlugin.class
+com\znv\fss\elasticsearch\plugin\FeatureCompScriptPlugin$FeatureCompNativeScriptFactory.class
+com\znv\fss\elasticsearch\plugin\FeatureCompScriptPlugin$FeatureCompNativeScript.class

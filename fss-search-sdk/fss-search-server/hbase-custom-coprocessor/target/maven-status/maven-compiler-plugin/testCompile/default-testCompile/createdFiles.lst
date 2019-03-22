@@ -1,0 +1,6 @@
+com\znv\hbase\TestImageSearch.class
+com\znv\hbase\HBaseConfig.class
+com\znv\hbase\TestStayTimeStatNew.class
+com\znv\hbase\TestFaceSearch.class
+com\znv\hbase\TestStayTimeStat.class
+com\znv\hbase\TestBlackStaticSearch.class
